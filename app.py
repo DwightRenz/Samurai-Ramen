@@ -494,7 +494,7 @@ if len(teamA) == 5 and len(teamB) == 5:
                     elif val == "Team B":
                         return 'background-color: #C8102E; color: white;'
                     else:
-                        return 'background-color: #f0f0f0;'
+                        return 'background: rgb(14, 17, 23;'
                 
                 styled_df = comparison_df.style.applymap(color_advantage, subset=['Advantage'])
                 st.dataframe(styled_df, use_container_width=True, hide_index=True)
