@@ -51,7 +51,7 @@ st.markdown("""
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     }
     .player-tag {
-        background: linear-gradient(135deg, #1D428A 0%, #0057B8 100%);
+        background: #C8102E;
         color: white !important;
         padding: 0.5rem 1rem;
         border-radius: 25px;
@@ -91,7 +91,7 @@ st.markdown("""
     }
     /* Fix for multiselect */
     .stMultiSelect [data-baseweb="tag"] {
-        background-color: #1e3a8a !important;
+        background-color: #C8102E !important;
         color: white !important;
     }
     .stMultiSelect [data-baseweb="tag"] span {
@@ -101,7 +101,7 @@ st.markdown("""
         border-left: 4px solid #10b981;
     }
     .team-incomplete {
-        border-left: 4px solid #f59e0b;
+        border-left: 4px solid #C8102E;
     }
     .feature-metric {
         text-align: center;
@@ -419,7 +419,7 @@ if len(teamA) == 5 and len(teamB) == 5:
                 fig, ax = plt.subplots(figsize=(8, 4))
                 teams = ['Team A', 'Team B']
                 probabilities = [prob[1] * 100, prob[0] * 100]
-                colors = ['#667eea', '#764ba2']
+                colors = ['#1D428A', '#C8102E']
                 
                 bars = ax.bar(teams, probabilities, color=colors, alpha=0.8)
                 ax.set_ylabel('Win Probability (%)')
@@ -436,7 +436,7 @@ if len(teamA) == 5 and len(teamB) == 5:
             with viz_col2:
                 # Enhanced pie chart
                 fig, ax = plt.subplots(figsize=(6, 6))
-                colors = ['#667eea', '#764ba2']
+                colors = ['#1D428A', '#C8102E']
                 wedges, texts, autotexts = ax.pie([prob[1], prob[0]], 
                                                 labels=['Team A', 'Team B'], 
                                                 autopct='%1.1f%%', 
