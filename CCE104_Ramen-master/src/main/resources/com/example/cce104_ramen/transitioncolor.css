@@ -1,0 +1,99 @@
+/* Initial button style */
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-effect: null;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-font-family: 'Elephant';
+    -fx-radius: 15px;
+}
+
+/* Zoom text and change background on hover */
+.button:hover {
+    -fx-background-color: 	rgb(210, 4, 45);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0, 2, 2);
+}
+/* Change button's child label colors on hover */
+.button:hover .label {
+    -fx-text-fill: white; /* Set text color to white */
+}
+
+
+/* Stay black after click */
+.button:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.Spinner{
+    -fx-cursor: hand;
+    -fx-effect: null;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-font-family: 'Elephant';
+}
+
+/* Spinner container styling */
+.Spinner {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: white;
+    -fx-cursor: hand;
+}
+
+/* Spinner text field styling */
+.Spinner .text-field {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Elephant';
+    -fx-padding: 5px;
+    -fx-alignment: center; /* Align the text in the center */
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+/* Increment and Decrement arrows styling */
+.Spinner .increment-arrow-button,
+.Spinner .decrement-arrow-button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: null;
+}
+
+/* Hover effect for increment and decrement buttons */
+.Spinner .increment-arrow-button:hover,
+.Spinner .decrement-arrow-button:hover {
+    -fx-background-color: rgb(210, 4, 45); /* Matches hover color for buttons */
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0, 2, 2);
+}
+
+/* Pressed effect for increment and decrement buttons */
+.Spinner .increment-arrow-button:pressed,
+.Spinner .decrement-arrow-button:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+
